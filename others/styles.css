@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #8294C4;
+    --second-bg-color: #ACB1D6;
+    --text-color: #ededed;
+    --main-color: #113946;
+    --img-url: url('images/aiIan.jpg');
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+
+.home-content {
+    max-width: 60rem;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content .text-animate {
+    position: relative;
+    width: 32.8rem;
+}
+
+.home-content .text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+.row .btn1 .btn-1 .btn {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.headshot {
+	flex-shrink: 0;
+	margin: 40px;
+	height: calc(250px + 6vw);
+	width: calc(250px + 6vw);
+	border: calc(7px + 0.2vw) solid transparent;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.headshot-3 {
+	border-radius: 50% 10%;
+	background-image: var(--img-url), linear-gradient(to bottom left, #3a00f8, #038dbb);
+}
+
+/* About */
+.about {
+    background-color: var(--main-color);
+    display: grid;
+    place-items: center;
+}
+
+.services {
+    display: grid;
+    place-items: center;
+}
+
+.projects {
+    background-color: var(--main-color);
+}
+
+.contact .row .contacts .contact-form {
+    display: grid;
+    place-items: center;
+}
+
+#sticky-footer {
+    background-color: var(--main-color);
+}
+
